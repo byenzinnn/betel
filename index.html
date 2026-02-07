@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betel Corp - Consultoria e Captação</title>
+    <meta name="description" content="Consultoria estratégica e captação de recursos para entidades filantrópicas que geram impacto social.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="container nav-content">
+            <div class="logo">Betel Corp</div>
+            <div class="nav-links">
+                <a href="#institucional">Institucional</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#publico">Público</a>
+                <a href="#diferencial">Diferencial</a>
+            </div>
+            <a href="mailto:contato@betelcorp.com.br" class="btn btn-primary">Contato</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#institucional">Institucional</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#publico">Público</a>
+        <a href="#diferencial">Diferencial</a>
+        <a href="mailto:contato@betelcorp.com.br" class="btn btn-primary">Contato</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Consultoria Estratégica" class="hero-bg">
+        <div class="container hero-content">
+            <div class="accent-bar"></div>
+            <h1 class="hero-title">Betel Corp Consultoria e Captação</h1>
+            <p class="hero-subtitle">Onde propósito e recursos se encontram</p>
+            <p class="hero-description">
+                Consultoria estratégica e captação de recursos para entidades
+                filantrópicas que geram impacto social.
+            </p>
+            <div class="hero-buttons">
+                <a href="mailto:contato@betelcorp.com.br" class="btn btn-primary btn-lg">
+                    Falar com um especialista
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#servicos" class="btn btn-outline btn-lg">Conhecer nossa atuação</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section class="section" id="quem-somos">
+        <div class="container">
+            <div class="section-header">
+                <div class="accent-line"></div>
+                <h2 class="section-title">Quem Somos</h2>
+            </div>
+            <p class="lead-text">
+                Somos uma consultoria especializada em captação de recursos e
+                desenvolvimento institucional para entidades filantrópicas. Atuamos
+                apoiando organizações que geram impacto social a estruturar
+                processos, acessar recursos e garantir sustentabilidade financeira
+                com responsabilidade, estratégia e propósito.
+            </p>
+        </div>
+    </section>
+
+    <!-- Institucional -->
+    <section class="section section-dark" id="institucional">
+        <div class="container">
+            <!-- Missão e Visão -->
+            <div class="grid-2 mb-80">
+                <div class="institutional-card">
+                    <div class="card-header">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                        <h3>Missão</h3>
+                    </div>
+                    <p>
+                        Apoiar entidades filantrópicas a construírem sustentabilidade
+                        financeira e institucional por meio de consultoria estratégica
+                        e captação de recursos, fortalecendo sua capacidade de gerar
+                        impacto social duradouro e transformador.
+                    </p>
+                </div>
+                <div class="institutional-card">
+                    <div class="card-header">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                        <h3>Visão</h3>
+                    </div>
+                    <p>
+                        Ser reconhecida nacionalmente como referência em consultoria
+                        estratégica e captação de recursos para o terceiro setor,
+                        contribuindo para que organizações filantrópicas alcancem
+                        excelência em governança, gestão e perenidade.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Valores -->
+            <div class="values-section mb-80">
+                <div class="section-header centered">
+                    <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                    </svg>
+                    <h3>Valores</h3>
+                </div>
+                <div class="grid-3">
+                    <div class="value-card">
+                        <h4>Ética e Integridade</h4>
+                        <p>Atuamos com retidão, transparência e responsabilidade em todas as relações e processos, honrando compromissos e respeitando princípios institucionais.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Compromisso com Impacto</h4>
+                        <p>Orientamos nossa atuação pela geração de resultados concretos e sustentáveis, colocando o impacto social como centro de todas as decisões.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Respeito e Valorização das Pessoas</h4>
+                        <p>Reconhecemos o valor de cada indivíduo e instituição, atuando com empatia, escuta ativa e respeito à diversidade de contextos e propósitos.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Excelência Técnica</h4>
+                        <p>Buscamos constantemente atualização, rigor metodológico e qualidade em nossos serviços, entregando soluções que atendem aos mais altos padrões profissionais.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Sustentabilidade Institucional</h4>
+                        <p>Acreditamos que organizações sólidas, com governança estruturada e recursos bem geridos, geram impacto de longo prazo e cumprem sua missão com responsabilidade.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Transparência e Prestação de Contas</h4>
+                        <p>Mantemos comunicação clara, processos documentados e práticas que garantem a rastreabilidade e a responsabilidade sobre recursos e resultados.</p>
+                    </div>
+                    <div class="value-card">
+                        <h4>Propósito e Sentido</h4>
+                        <p>Conectamos nossa atuação a um compromisso maior: contribuir para um mundo mais justo, solidário e humano, onde organizações filantrópicas cumprem sua vocação com plenitude.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nosso Negócio -->
+            <div class="business-section">
+                <div class="accent-line"></div>
+                <h3 class="section-subtitle">Nosso Negócio</h3>
+                <div class="business-content">
+                    <div class="business-item">
+                        <h4>Qual é o negócio da Betel Corp?</h4>
+                        <p>
+                            A Betel Corp atua no desenvolvimento institucional e na
+                            estruturação de captação de recursos para entidades
+                            filantrópicas. Oferecemos consultoria estratégica voltada à
+                            sustentabilidade financeira, governança e fortalecimento
+                            organizacional, permitindo que instituições do terceiro setor
+                            acessem recursos públicos e privados de forma qualificada,
+                            ética e sustentável.
+                        </p>
+                    </div>
+                    <div class="business-item">
+                        <h4>Para quem atuamos?</h4>
+                        <p>
+                            Trabalhamos com hospitais filantrópicos, instituições de
+                            saúde, organizações sociais, fundações e entidades
+                            assistenciais que geram impacto social relevante e buscam
+                            consolidar sua estrutura institucional e financeira.
+                        </p>
+                    </div>
+                    <div class="business-item">
+                        <h4>Como geramos valor?</h4>
+                        <p>
+                            Transformamos desafios financeiros e organizacionais em
+                            oportunidades de crescimento sustentável. Por meio de
+                            diagnósticos institucionais, planejamento estratégico,
+                            estruturação de processos de captação e acompanhamento
+                            especializado, fortalecemos a capacidade das organizações de
+                            acessar recursos, aprimorar sua governança e ampliar seu
+                            impacto social.
+                        </p>
+                    </div>
+                    <div class="business-item">
+                        <h4>Qual problema institucional ajudamos a resolver?</h4>
+                        <p>
+                            Muitas entidades filantrópicas enfrentam dificuldades
+                            estruturais: falta de processos organizados para captação,
+                            fragilidade na governança, ausência de planejamento
+                            financeiro e limitações para acessar recursos públicos e
+                            privados. Essas fragilidades comprometem a sustentabilidade e
+                            a capacidade de cumprir sua missão.
+                        </p>
+                        <p>
+                            A Betel Corp atua justamente nesse ponto crítico:
+                            estruturamos as organizações para que deixem de depender de
+                            ações pontuais e construam bases sólidas, sustentáveis e
+                            escaláveis para sua atuação, garantindo perenidade
+                            institucional e ampliação do impacto gerado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que Fazemos -->
+    <section class="section" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <div class="accent-line"></div>
+                <h2 class="section-title">O que Fazemos</h2>
+            </div>
+            <div class="grid-2">
+                <div class="service-card">
+                    <h3>Captação de Recursos</h3>
+                    <p>Estruturação e execução de estratégias para acesso a recursos públicos e privados.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Desenvolvimento Institucional</h3>
+                    <p>Fortalecimento da governança, processos e posicionamento institucional.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Projetos e Parcerias</h3>
+                    <p>Elaboração, gestão e acompanhamento de projetos e parcerias estratégicas.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Assessoria Estratégica</h3>
+                    <p>Apoio técnico para tomada de decisão, planejamento e crescimento sustentável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Para Quem Atuamos -->
+    <section class="section section-split" id="publico">
+        <div class="container">
+            <div class="grid-2 align-center">
+                <div>
+                    <div class="section-header">
+                        <div class="accent-line"></div>
+                        <h2 class="section-title">Para Quem Atuamos</h2>
+                    </div>
+                    <ul class="checklist">
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <path d="M22 4L12 14.01l-3-3"/>
+                            </svg>
+                            <span>Hospitais e instituições de saúde</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <path d="M22 4L12 14.01l-3-3"/>
+                            </svg>
+                            <span>Entidades filantrópicas e assistenciais</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <path d="M22 4L12 14.01l-3-3"/>
+                            </svg>
+                            <span>Organizações sociais e fundações</span>
+                        </li>
+                        <li>
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                <path d="M22 4L12 14.01l-3-3"/>
+                            </svg>
+                            <span>Iniciativas de impacto social</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Instituições" class="section-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosso Diferencial -->
+    <section class="section section-split-reverse" id="diferencial">
+        <div class="container">
+            <div class="grid-2 align-center">
+                <div class="image-container">
+                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Impacto Social" class="section-image">
+                </div>
+                <div>
+                    <div class="section-header">
+                        <div class="accent-line"></div>
+                        <h2 class="section-title">Nosso Diferencial</h2>
+                    </div>
+                    <ul class="bullet-list">
+                        <li>Visão estratégica aliada à prática</li>
+                        <li>Linguagem clara para gestores e conselhos</li>
+                        <li>Atuação ética, responsável e transparente</li>
+                        <li>Foco em sustentabilidade, não em ações pontuais</li>
+                        <li>Compreensão real da realidade filantrópica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados e Impacto -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="accent-line"></div>
+                <h2 class="section-title">Resultados e Impacto</h2>
+            </div>
+            <p class="lead-text">
+                Nossa atuação é orientada por impacto, responsabilidade e resultados
+                concretos. Cada projeto é conduzido com atenção às necessidades
+                institucionais, respeitando diretrizes legais, financeiras e
+                estratégicas, sempre com foco na sustentabilidade a longo prazo.
+            </p>
+        </div>
+    </section>
+
+    <!-- Como Trabalhamos -->
+    <section class="section section-split" id="processo">
+        <div class="container">
+            <div class="grid-2 align-center">
+                <div class="process-steps">
+                    <div class="section-header">
+                        <div class="accent-line"></div>
+                        <h2 class="section-title">Como Trabalhamos</h2>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Diagnóstico institucional</h3>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Planejamento estratégico</h3>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Estruturação da captação</h3>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Acompanhamento e ajustes</h3>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <h3>Consolidação de resultados</h3>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sustentabilidade Financeira" class="section-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section section-cta">
+        <div class="container text-center">
+            <div class="accent-bar-center"></div>
+            <h2 class="cta-title">
+                Está pronto para fortalecer sua instituição com estratégia e
+                sustentabilidade?
+            </h2>
+            <a href="mailto:contato@betelcorp.com.br" class="btn btn-primary btn-lg">
+                Entre em contato com a Betel Corp
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-title">Betel Corp</h3>
+                    <p class="footer-subtitle">Consultoria e Captação</p>
+                    <p class="footer-tagline">Onde propósito e recursos se encontram</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contato</h4>
+                    <p><a href="mailto:contato@betelcorp.com.br">contato@betelcorp.com.br</a></p>
+                    <p><a href="https://wa.me/5511999999999">WhatsApp</a></p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Betel Corp Consultoria e Captação. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
