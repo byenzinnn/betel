@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Target, Eye, Heart } from "lucide-react";
 import { useState } from "react";
 
 /**
@@ -11,6 +11,44 @@ import { useState } from "react";
 
 export default function Home() {
   const [activeService, setActiveService] = useState(0);
+
+  const values = [
+    {
+      title: "Ética e Integridade",
+      description:
+        "Atuamos com retidão, transparência e responsabilidade em todas as relações e processos, honrando compromissos e respeitando princípios institucionais.",
+    },
+    {
+      title: "Compromisso com Impacto",
+      description:
+        "Orientamos nossa atuação pela geração de resultados concretos e sustentáveis, colocando o impacto social como centro de todas as decisões.",
+    },
+    {
+      title: "Respeito e Valorização das Pessoas",
+      description:
+        "Reconhecemos o valor de cada indivíduo e instituição, atuando com empatia, escuta ativa e respeito à diversidade de contextos e propósitos.",
+    },
+    {
+      title: "Excelência Técnica",
+      description:
+        "Buscamos constantemente atualização, rigor metodológico e qualidade em nossos serviços, entregando soluções que atendem aos mais altos padrões profissionais.",
+    },
+    {
+      title: "Sustentabilidade Institucional",
+      description:
+        "Acreditamos que organizações sólidas, com governança estruturada e recursos bem geridos, geram impacto de longo prazo e cumprem sua missão com responsabilidade.",
+    },
+    {
+      title: "Transparência e Prestação de Contas",
+      description:
+        "Mantemos comunicação clara, processos documentados e práticas que garantem a rastreabilidade e a responsabilidade sobre recursos e resultados.",
+    },
+    {
+      title: "Propósito e Sentido",
+      description:
+        "Conectamos nossa atuação a um compromisso maior: contribuir para um mundo mais justo, solidário e humano, onde organizações filantrópicas cumprem sua vocação com plenitude.",
+    },
+  ];
 
   const services = [
     {
@@ -65,6 +103,9 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16">
           <div className="font-display text-2xl text-white">Betel Corp</div>
           <div className="hidden md:flex gap-8 text-sm">
+            <a href="#institucional" className="hover:text-accent transition-all duration-300">
+              Institucional
+            </a>
             <a href="#servicos" className="hover:text-accent transition-all duration-300">
               Serviços
             </a>
@@ -73,9 +114,6 @@ export default function Home() {
             </a>
             <a href="#diferencial" className="hover:text-accent transition-all duration-300">
               Diferencial
-            </a>
-            <a href="#processo" className="hover:text-accent transition-all duration-300">
-              Processo
             </a>
           </div>
           <Button
@@ -155,6 +193,132 @@ export default function Home() {
             processos, acessar recursos e garantir sustentabilidade financeira
             com responsabilidade, estratégia e propósito.
           </p>
+        </div>
+      </section>
+
+      {/* Institucional - Missão, Visão, Valores */}
+      <section id="institucional" className="py-20 md:py-32 bg-black border-b border-border">
+        <div className="container max-w-6xl">
+          {/* Missão e Visão */}
+          <div className="grid md:grid-cols-2 gap-12 mb-20">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <Target className="h-8 w-8 text-accent" />
+                <h3 className="font-display text-3xl">Missão</h3>
+              </div>
+              <p className="text-lg text-gray-300 leading-relaxed font-body">
+                Apoiar entidades filantrópicas a construírem sustentabilidade
+                financeira e institucional por meio de consultoria estratégica
+                e captação de recursos, fortalecendo sua capacidade de gerar
+                impacto social duradouro e transformador.
+              </p>
+            </div>
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <Eye className="h-8 w-8 text-accent" />
+                <h3 className="font-display text-3xl">Visão</h3>
+              </div>
+              <p className="text-lg text-gray-300 leading-relaxed font-body">
+                Ser reconhecida nacionalmente como referência em consultoria
+                estratégica e captação de recursos para o terceiro setor,
+                contribuindo para que organizações filantrópicas alcancem
+                excelência em governança, gestão e perenidade.
+              </p>
+            </div>
+          </div>
+
+          {/* Valores */}
+          <div className="mb-20">
+            <div className="flex items-center gap-3 mb-12">
+              <Heart className="h-8 w-8 text-accent" />
+              <h3 className="font-display text-3xl">Valores</h3>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {values.map((value, index) => (
+                <div
+                  key={index}
+                  className="border border-border p-6 transition-all duration-300 hover:border-accent hover:bg-accent/5"
+                >
+                  <h4 className="font-heading text-lg mb-3 text-white">
+                    {value.title}
+                  </h4>
+                  <p className="text-sm text-gray-400 font-body leading-relaxed">
+                    {value.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Nosso Negócio */}
+          <div>
+            <div className="accent-line"></div>
+            <h3 className="font-display text-3xl mb-8">Nosso Negócio</h3>
+            <div className="space-y-8">
+              <div>
+                <h4 className="font-heading text-xl mb-4 text-accent">
+                  Qual é o negócio da Betel Corp?
+                </h4>
+                <p className="text-gray-300 leading-relaxed font-body">
+                  A Betel Corp atua no desenvolvimento institucional e na
+                  estruturação de captação de recursos para entidades
+                  filantrópicas. Oferecemos consultoria estratégica voltada à
+                  sustentabilidade financeira, governança e fortalecimento
+                  organizacional, permitindo que instituições do terceiro setor
+                  acessem recursos públicos e privados de forma qualificada,
+                  ética e sustentável.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-heading text-xl mb-4 text-accent">
+                  Para quem atuamos?
+                </h4>
+                <p className="text-gray-300 leading-relaxed font-body">
+                  Trabalhamos com hospitais filantrópicos, instituições de
+                  saúde, organizações sociais, fundações e entidades
+                  assistenciais que geram impacto social relevante e buscam
+                  consolidar sua estrutura institucional e financeira.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-heading text-xl mb-4 text-accent">
+                  Como geramos valor?
+                </h4>
+                <p className="text-gray-300 leading-relaxed font-body">
+                  Transformamos desafios financeiros e organizacionais em
+                  oportunidades de crescimento sustentável. Por meio de
+                  diagnósticos institucionais, planejamento estratégico,
+                  estruturação de processos de captação e acompanhamento
+                  especializado, fortalecemos a capacidade das organizações de
+                  acessar recursos, aprimorar sua governança e ampliar seu
+                  impacto social.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-heading text-xl mb-4 text-accent">
+                  Qual problema institucional ajudamos a resolver?
+                </h4>
+                <p className="text-gray-300 leading-relaxed font-body">
+                  Muitas entidades filantrópicas enfrentam dificuldades
+                  estruturais: falta de processos organizados para captação,
+                  fragilidade na governança, ausência de planejamento
+                  financeiro e limitações para acessar recursos públicos e
+                  privados. Essas fragilidades comprometem a sustentabilidade e
+                  a capacidade de cumprir sua missão.
+                </p>
+                <p className="text-gray-300 leading-relaxed font-body mt-4">
+                  A Betel Corp atua justamente nesse ponto crítico:
+                  estruturamos as organizações para que deixem de depender de
+                  ações pontuais e construam bases sólidas, sustentáveis e
+                  escaláveis para sua atuação, garantindo perenidade
+                  institucional e ampliação do impacto gerado.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
